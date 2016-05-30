@@ -1,4 +1,2 @@
-hello world!!Lee!!
-I love you!
-My name is Stupid Zhe~
-lalalal
+hello world!
+这是我第一次使用git
