@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:28 +0800] "GET /bbs-demo/ HTTP/1.1" 200 945 http-bio-8080-exec-1 163
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:28 +0800] "GET /bbs-demo/js/jquery-1.4.4.min.js HTTP/1.1" 304 - http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:28 +0800] "GET /bbs-demo/js/userlogin-ajax.js HTTP/1.1" 304 - http-bio-8080-exec-4 2
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:28 +0800] "GET /bbs-demo/js/jquery-form.min.js HTTP/1.1" 304 - http-bio-8080-exec-3 2
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:31 +0800] "POST /bbs-demo/login HTTP/1.1" 200 228 http-bio-8080-exec-6 48
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:32 +0800] "GET /bbs-demo/index HTTP/1.1" 200 5006 http-bio-8080-exec-7 78
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:32 +0800] "GET /WTF-maven/headimage/2016052546105967109243.jpg HTTP/1.1" 404 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:32 +0800] "GET /WTF-maven/headimage/2016052546105967109243.jpg HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:34 +0800] "GET /bbs-demo/changebbs/1 HTTP/1.1" 200 1050 http-bio-8080-exec-10 8
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:34 +0800] "GET /bbs-demo/js/changebbs-ajax.js HTTP/1.1" 304 - http-bio-8080-exec-10 5
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:36 +0800] "GET /bbs-demo/index HTTP/1.1" 200 5006 http-bio-8080-exec-10 7
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:36 +0800] "GET /WTF-maven/headimage/2016052546105967109243.jpg HTTP/1.1" 404 - http-bio-8080-exec-10 0
+0:0:0:0:0:0:0:1 - - [26/May/2016:20:49:36 +0800] "GET /WTF-maven/headimage/2016052546105967109243.jpg HTTP/1.1" 404 - http-bio-8080-exec-10 0

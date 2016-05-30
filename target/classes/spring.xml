@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="  
+		http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd  
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	http://www.springframework.org/schema/beans     
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context        
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd" >
+	<context:annotation-config />
+	<bean id="userDao" class="com.sedion.zhe.model.User" />
+ 	<bean id="userLoginService" class="com.sedion.zhe.service.impl.UserLoginServiceImpl" />
+	<bean id="UserRegister" class="com.sedion.zhe.bbs.UserRegister" />
+	<bean id="Index" class="com.sedion.zhe.bbs.Index"></bean>
+	<bean id="ChangeImg" class="com.sedion.zhe.bbs.ChangeImg" />
+	<bean id="ChangeBBS" class="com.sedion.zhe.bbs.ChangeBBS" />
+	<bean id="RecordAop" class="com.sedion.zhe.validator.RecordRecord" />
+	<aop:aspectj-autoproxy>
+		<aop:include name="RecordAop" />
+	</aop:aspectj-autoproxy>
+<!-- 	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/webDB" />
+		<property name="username" value="root" />
+		<property name="password" value="ifimbest123s" />
+	</bean> -->
+</beans>

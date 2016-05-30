@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="  
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+	http://www.springframework.org/schema/beans     
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+	http://www.springframework.org/schema/context        
+	http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	<context:annotation-config />
+
+
+<!-- 	<context:component-scan base-package="com.sedion" />
+ -->
+	<!-- <bean id="dataSourceProxy" class="org.springframework.jdbc.datasource.TransactionAwareDataSourceProxy"> 
+		<property name="targetDataSource" ref="druidDataSource" /> </bean> -->
+
+	<context:component-scan base-package="com.sedion.zhe.*"/>
+	<bean id="user" class="com.sedion.zhe.model.User" />
+
+	<bean id="userLoginService" class="com.sedion.zhe.service.impl.UserLoginServiceImpl" />
+
+	<bean id="UserRegister" class="com.sedion.zhe.bbs.UserRegister">
+	</bean>
+	<bean id="Index" class="com.sedion.zhe.bbs.Index"></bean>
+	<bean id="ChangeImg" class="com.sedion.zhe.bbs.ChangeImg" />
+	<bean id="ChangeBBS" class="com.sedion.zhe.bbs.ChangeBBS"></bean>
+	<bean id="Record" class="com.sedion.zhe.validator.RecordRecord"></bean>
+	<bean id="Config" class="com.sedion.zhe.config.UserConfig"></bean>
+
+	<aop:aspectj-autoproxy />
+</beans>
